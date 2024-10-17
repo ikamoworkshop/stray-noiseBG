@@ -43,14 +43,14 @@ mat2 rotate2D(float angle){
 float lines(vec2 uv, float offset){
     return smoothstep(
         0.0, 0.5 + offset * 0.5,
-        abs(0.5 * (sin(uv.x * 3.0) + offset * 2.0))
+        abs(0.5 * (sin(uv.x * 2.0) + offset * 2.0))
     );
 }
 
 void main(){
-    float noise = noise(vPosition + uTime * .1);
-    vec3 color1 = vec3(0.53, 1.0, 0.77);
-    vec3 color2 = vec3(0.26, 0.48, 1.0);
+    float noise = noise(vPosition + uTime * .3);
+    vec3 color1 = vec3(0.13, 0.15, 1.0);
+    vec3 color2 = vec3(0.26, 1.0, 0.94);
     vec3 color3 = vec3(0.04, 0.05, 0.09);
 
     vec2 baseUV = rotate2D(noise) * vPosition.xy;

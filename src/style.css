@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 *
 {
     margin: 0;
@@ -8,6 +10,7 @@ html,
 body
 {
     overflow: hidden;
+    font-family: "Inter", sans-serif;
 }
 
 .webgl
@@ -16,6 +19,7 @@ body
     top: 0;
     left: 0;
     outline: none;
+    z-index: -1;
 }
 
 
@@ -36,4 +40,30 @@ body
 section:nth-child(odd)
 {
     justify-content: flex-end;
+}
+
+.title-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.title{
+    color: white;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    font-size: 3rem;
+}
+
+.description{
+    color: white;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    font-size: 1rem;
 }

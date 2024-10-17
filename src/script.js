@@ -56,8 +56,8 @@ const cubeCamera = new THREE.CubeCamera(0.1, 10, cubeRenderTarget)
  * Test mesh
  */
 // Geometry
-const geometry = new THREE.SphereGeometry(2, 32, 32)
-const geometryTwo = new THREE.SphereGeometry(.6, 32, 32)
+const geometry = new THREE.SphereGeometry(2, 128, 128)
+const geometryTwo = new THREE.SphereGeometry(2, 128, 128)
 
 // Material
 const material = new THREE.ShaderMaterial({
@@ -88,6 +88,7 @@ const materialTwo = new THREE.ShaderMaterial({
 // Mesh
 const mesh = new THREE.Mesh(geometry, material)
 const meshTwo = new THREE.Mesh(geometryTwo, materialTwo)
+meshTwo.position.set(1.9, .7, 0)
 scene.add(mesh, meshTwo)
 
 /**
