@@ -58,12 +58,12 @@ section:nth-child(odd)
     color: white;
     font-weight: 300;
     letter-spacing: .2rem;
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 .description{
     color: white;
     font-weight: 300;
     letter-spacing: .2rem;
-    font-size: 1rem;
+    font-size: .6rem;
 }
