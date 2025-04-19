@@ -57,7 +57,7 @@ const cubeCamera = new THREE.CubeCamera(0.1, 10, cubeRenderTarget)
  */
 // Geometry
 const geometry = new THREE.SphereGeometry(2, 128, 128)
-const geometryTwo = new THREE.SphereGeometry(.6, 128, 128)
+const geometryTwo = new THREE.IcosahedronGeometry(1)
 
 // Material
 const material = new THREE.ShaderMaterial({

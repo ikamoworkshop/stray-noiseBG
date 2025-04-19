@@ -49,8 +49,8 @@ float lines(vec2 uv, float offset){
 
 void main(){
     float noise = noise(vPosition + uTime * .3);
-    vec3 color1 = vec3(0.13, 0.15, 1.0);
-    vec3 color2 = vec3(0.26, 1.0, 0.94);
+    vec3 color1 = vec3(0.83, 0.13, 1.0);
+    vec3 color2 = vec3(0.26, 1.0, 0.96);
     vec3 color3 = vec3(0.04, 0.05, 0.09);
 
     vec2 baseUV = rotate2D(noise) * vPosition.xy;
